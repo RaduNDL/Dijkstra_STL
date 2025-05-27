@@ -52,7 +52,7 @@ void generateGraphToFile(const string& filename, int nodes, int edges, int maxWe
     if (!buffer.empty())
         out << buffer;
     out.close();
-    cout << "Graph generated (fast text)\n";
+    cout << "Graph generated \n";
 }
 vector<vector<Edge>> readGraphFromFile(const string& filename, int& nodes, int& edges) {
     ifstream in(filename);
@@ -120,7 +120,7 @@ void writeDistancesToFile(const string& filename, const vector<long long>& dist)
     if (!buffer.empty()) out << buffer;
     out << '\n';
     out.close();
-    cout << "Distances written (text)\n";
+    cout << "Distances written \n";
 }
 int main() {
     int nodes = 1000000;
